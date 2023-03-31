@@ -1,0 +1,7 @@
+.mealsContainer {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  column-gap: 10px;
+  justify-content: center;
+}

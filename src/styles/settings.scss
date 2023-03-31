@@ -1,0 +1,35 @@
+$bgcolor: #f4ecec;
+$color1: salmon;
+$color2: black;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: $bgcolor;
+  color: black;
+}
+
+.app {
+  .headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1 {
+      color: $color1;
+      padding: 10px;
+    }
+    input {
+      padding: 10px 20px;
+      width: 300px;
+      border-radius: 10px;
+      border: none;
+      &::placeholder {
+        text-align: center;
+      }
+    }
+  }
+}

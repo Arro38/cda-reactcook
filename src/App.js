@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Recipe from "./components/Recipe";
 
-function App() {
+const App = () => {
+  let [searchInput, setSearchInput] = useState("chicken");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="headerContainer">
+        <h1>React Cook</h1>
+        <input
+          type="text"
+          placeholder="Tappez le nom d'un aliment (anglais)"
+          onChange={(e) => setSearchInput(e.target.value)}
+        />
+      </div>
+      <div className="recipesContainer">
+        <Recipe search={searchInput} />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
