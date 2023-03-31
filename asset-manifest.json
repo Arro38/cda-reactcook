@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cda-reactcook/static/css/main.294ed270.css",
+    "main.js": "/cda-reactcook/static/js/main.ca939a0a.js",
+    "index.html": "/cda-reactcook/index.html",
+    "main.294ed270.css.map": "/cda-reactcook/static/css/main.294ed270.css.map",
+    "main.ca939a0a.js.map": "/cda-reactcook/static/js/main.ca939a0a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.294ed270.css",
+    "static/js/main.ca939a0a.js"
+  ]
+}
